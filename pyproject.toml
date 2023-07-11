@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ml"
+version = "0.0.0"
+description = ""
+authors = ["James Conroy-Finn <git@invetica.co.uk>"]
+classifiers = [
+  "Private :: Do Not Upload"
+]
+
+[tool.poetry.dependencies]
+# Torch doesn't support more recent versions of Python?!
+python = "3.9.17"
+langchain = { version = "^0.0.229", extras = ["all"] }
+openai = { version = "^0.27.8", extras = ["embeddings", "wandb", "datalib"] }
+
+[tool.poetry.scripts]
+poetry = "poetry.console.application:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
