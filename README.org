@@ -8,6 +8,13 @@ LangChain depends on a lot of Python libraries, including =azure-ai-vision= and
 =jq=. Those do not build under Nix, although there are [[https://github.com/nix-community/poetry2nix/blob/e4089652c5ec524a276cf2f70c96e579d97ba168/overrides/default.nix#L988][patches]] available that
 may help.
 
+* Contents                                                        :TOC_3:TOC:
+- [[#error-building-jq][Error building jq]]
+- [[#python][Python]]
+  - [[#version][Version]]
+  - [[#dependencies][Dependencies]]
+
+* Error building jq
 #+begin_example
 direnv: loading ~/code/nix-poetry-langchain/.envrc
 direnv: using flake . --impure
