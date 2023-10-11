@@ -1,9 +1,12 @@
 {
   inputs = {
+    # Because devenv doesn't give you reproducible builds without the Python rewrite.
+    #
+    # https://github.com/cachix/devenv/pull/745
+    devenv.url = "github:cachix/devenv/python-rewrite";
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
     systems.url = "github:nix-systems/default";
-    devenv.url = "github:cachix/devenv";
-    nixpkgs-python.url = "github:cachix/nixpkgs-python";
   };
 
   outputs = { self, nixpkgs, devenv, systems, ... }@inputs:

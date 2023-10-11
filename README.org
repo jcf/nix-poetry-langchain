@@ -18,9 +18,7 @@ may help.
 #+begin_example
 direnv: loading ~/code/nix-poetry-langchain/.envrc
 direnv: using flake . --impure
-warning: Git tree '/Users/jcf/code/nix-poetry-langchain' is dirty
-evaluating derivation 'git+file:///Users/jcf/code/nix-poetry-langchain#devShells.aarch64-darwin.default'direnv: ([/nix/store/0zay0jgkxqjd6ij07190s66765glhf3w-direnv-2.32.3/bin/direnv export zsh]) is taking a while to execute. Use CTRL-C to give up.
-warning: Git tree '/Users/jcf/code/nix-poetry-langchain' is dirty
+evaluating derivation 'git+file:///Users/jcf/code/nix-poetry-langchain#devShells.aarch64-darwin.default'direnv: ([/nix/store/pkj1ki51sylbb4dylbc3ac2y4vv9xczv-direnv-2.32.3/bin/direnv export zsh]) is taking a while to execute. Use CTRL-C to give up.
 direnv: nix-direnv: renewed cache
 💡 A .env file was not found, while dotenv integration is enabled.
 
@@ -85,59 +83,55 @@ The following error occurred when trying to handle this error:
 
     × Building wheel for jq (pyproject.toml) did not run successfully.
     │ exit code: 1
-    ╰─> [167 lines of output]
+    ╰─> [163 lines of output]
         running bdist_wheel
         running build
         running build_ext
-        checking for a BSD-compatible install... /run/current-system/sw/bin/install -c
+        checking for a BSD-compatible install... /nix/store/3acj5l3cwmliiihig0hm6y4p0nsk8jgi-coreutils-9.1/bin/install -c
         checking whether build environment is sane... yes
-        checking for a thread-safe mkdir -p... /run/current-system/sw/bin/mkdir -p
-        checking for gawk... no
-        checking for mawk... no
-        checking for nawk... no
-        checking for awk... awk
+        checking for a thread-safe mkdir -p... /nix/store/3acj5l3cwmliiihig0hm6y4p0nsk8jgi-coreutils-9.1/bin/mkdir -p
+        checking for gawk... gawk
         checking whether make sets $(MAKE)... no
         checking whether make supports nested variables... no
-        checking for gcc... gcc
+        checking for gcc... clang
         checking whether the C compiler works... yes
         checking for C compiler default output file name... a.out
         checking for suffix of executables...
         checking whether we are cross compiling... no
         checking for suffix of object files... o
         checking whether we are using the GNU C compiler... yes
-        checking whether gcc accepts -g... yes
-        checking for gcc option to accept ISO C89... none needed
-        checking whether gcc understands -c and -o together... yes
+        checking whether clang accepts -g... yes
+        checking for clang option to accept ISO C89... none needed
+        checking whether clang understands -c and -o together... yes
         checking for style of include used by make... none
-        checking dependency style of gcc... none
-        checking build system type... arm-apple-darwin22.5.0
-        checking host system type... arm-apple-darwin22.5.0
+        checking dependency style of clang... none
+        checking build system type... arm-apple-darwin23.0.0
+        checking host system type... arm-apple-darwin23.0.0
         checking how to print strings... printf
-        checking for a sed that does not truncate output... /usr/bin/sed
-        checking for grep that handles long lines and -e... /usr/bin/grep
-        checking for egrep... /usr/bin/grep -E
-        checking for fgrep... /usr/bin/grep -F
-        checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
-        checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
-        checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-        checking the name lister (/usr/bin/nm -B) interface... BSD nm
+        checking for a sed that does not truncate output... /nix/store/3xadna193vv2q70ma4vxfc1qzjl4rsp8-gnused-4.8/bin/sed
+        checking for grep that handles long lines and -e... /nix/store/nnq9wap8klzk63y2fnxm36f16fxbw6vy-gnugrep-3.7/bin/grep
+        checking for egrep... /nix/store/nnq9wap8klzk63y2fnxm36f16fxbw6vy-gnugrep-3.7/bin/grep -E
+        checking for fgrep... /nix/store/nnq9wap8klzk63y2fnxm36f16fxbw6vy-gnugrep-3.7/bin/grep -F
+        checking for ld used by clang... ld
+        checking if the linker (ld) is GNU ld... no
+        checking for BSD- or MS-compatible name lister (nm)... nm
+        checking the name lister (nm) interface... BSD nm
         checking whether ln -s works... yes
         checking the maximum length of command line arguments... 786432
-        checking how to convert arm-apple-darwin22.5.0 file names to arm-apple-darwin22.5.0 format... func_convert_file_noop
-        checking how to convert arm-apple-darwin22.5.0 file names to toolchain format... func_convert_file_noop
-        checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files... -r
+        checking how to convert arm-apple-darwin23.0.0 file names to arm-apple-darwin23.0.0 format... func_convert_file_noop
+        checking how to convert arm-apple-darwin23.0.0 file names to toolchain format... func_convert_file_noop
+        checking for ld option to reload object files... -r
         checking for objdump... objdump
         checking how to recognize dependent libraries... pass_all
         checking for dlltool... no
         checking how to associate runtime and link libraries... printf %s\n
-        checking for ar... ar
         checking for archiver @FILE support... no
         checking for strip... strip
         checking for ranlib... ranlib
-        checking command to parse /usr/bin/nm -B output from gcc object... ok
+        checking command to parse nm output from clang object... ok
         checking for sysroot... no
-        checking for a working dd... /run/current-system/sw/bin/dd
-        checking how to truncate binary pipes... /run/current-system/sw/bin/dd bs=4096 count=1
+        checking for a working dd... /nix/store/3acj5l3cwmliiihig0hm6y4p0nsk8jgi-coreutils-9.1/bin/dd
+        checking how to truncate binary pipes... /nix/store/3acj5l3cwmliiihig0hm6y4p0nsk8jgi-coreutils-9.1/bin/dd bs=4096 count=1
         checking for mt... no
         checking if : is a manifest tool... no
         checking for dsymutil... dsymutil
@@ -148,7 +142,7 @@ The following error occurred when trying to handle this error:
         checking for -single_module linker flag... yes
         checking for -exported_symbols_list linker flag... yes
         checking for -force_load linker flag... yes
-        checking how to run the C preprocessor... gcc -E
+        checking how to run the C preprocessor... clang -E
         checking for ANSI C header files... yes
         checking for sys/types.h... yes
         checking for sys/stat.h... yes
@@ -161,14 +155,14 @@ The following error occurred when trying to handle this error:
         checking for unistd.h... yes
         checking for dlfcn.h... yes
         checking for objdir... .libs
-        checking if gcc supports -fno-rtti -fno-exceptions... yes
-        checking for gcc option to produce PIC... -fno-common -DPIC
-        checking if gcc PIC flag -fno-common -DPIC works... yes
-        checking if gcc static flag -static works... no
-        checking if gcc supports -c -o file.o... yes
-        checking if gcc supports -c -o file.o... (cached) yes
-        checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
-        checking dynamic linker characteristics... darwin22.5.0 dyld
+        checking if clang supports -fno-rtti -fno-exceptions... yes
+        checking for clang option to produce PIC... -fno-common -DPIC
+        checking if clang PIC flag -fno-common -DPIC works... yes
+        checking if clang static flag -static works... no
+        checking if clang supports -c -o file.o... yes
+        checking if clang supports -c -o file.o... (cached) yes
+        checking whether the clang linker (ld) supports shared libraries... yes
+        checking dynamic linker characteristics... darwin23.0.0 dyld
         checking how to hardcode library paths into programs... immediate
         checking whether stripping libraries is possible... yes
         checking if libtool supports shared libraries... yes
@@ -202,7 +196,7 @@ The following error occurred when trying to handle this error:
           File "/Users/jcf/code/nix-poetry-langchain/.venv/bin/make", line 5, in <module>
             from scripts.proto import main
         ModuleNotFoundError: No module named 'scripts'
-        Executing: ./configure CFLAGS=-fPIC --prefix=/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-req-build-8uc_0x9o/_deps/build/onig-install-6.9.4
+        Executing: ./configure CFLAGS=-fPIC --prefix=/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-req-build-cygn3nj8/_deps/build/onig-install-6.9.4
         Executing: make
         Traceback (most recent call last):
           File "/Users/jcf/code/nix-poetry-langchain/.venv/lib/python3.9/site-packages/pip/_vendor/pep517/in_process/_in_process.py", line 351, in <module>
@@ -211,40 +205,40 @@ The following error occurred when trying to handle this error:
             json_out['return_val'] = hook(**hook_input['kwargs'])
           File "/Users/jcf/code/nix-poetry-langchain/.venv/lib/python3.9/site-packages/pip/_vendor/pep517/in_process/_in_process.py", line 249, in build_wheel
             return _build_backend().build_wheel(wheel_directory, config_settings,
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 416, in build_wheel
-            return self._build_with_temp_dir(['bdist_wheel'], '.whl',
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 401, in _build_with_temp_dir
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 434, in build_wheel
+            return self._build_with_temp_dir(
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 419, in _build_with_temp_dir
             self.run_setup()
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 338, in run_setup
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/build_meta.py", line 341, in run_setup
             exec(code, locals())
           File "<string>", line 97, in <module>
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/__init__.py", line 107, in setup
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/__init__.py", line 103, in setup
             return distutils.core.setup(**attrs)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 185, in setup
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 185, in setup
             return run_commands(dist)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
             dist.run_commands()
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
             self.run_command(cmd)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 1234, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 989, in run_command
             super().run_command(command)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
             cmd_obj.run()
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/wheel/bdist_wheel.py", line 343, in run
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/wheel/bdist_wheel.py", line 364, in run
             self.run_command("build")
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
             self.distribution.run_command(command)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 1234, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 989, in run_command
             super().run_command(command)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
             cmd_obj.run()
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/command/build.py", line 131, in run
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/command/build.py", line 131, in run
             self.run_command(cmd_name)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 318, in run_command
             self.distribution.run_command(command)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 1234, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/dist.py", line 989, in run_command
             super().run_command(command)
-          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.nlXOvx/pip-build-env-jesf6aa3/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+          File "/private/var/folders/bt/72h1kztd54n6_fdtn41hn3tc0000gn/T/nix-shell.UpqRF8/pip-build-env-xx9lyrml/overlay/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
             cmd_obj.run()
           File "<string>", line 39, in run
           File "<string>", line 44, in _build_oniguruma
@@ -288,7 +282,7 @@ The following error occurred when trying to handle this error:
        59│
 
 Poetry install failed. Run 'poetry install' manually.
-direnv: export +C_INCLUDE_PATH +DEVENV_DOTFILE +DEVENV_PROFILE +DEVENV_ROOT +DEVENV_STATE +IN_NIX_SHELL +LD_LIBRARY_PATH +LIBRARY_PATH +PKG_CONFIG_PATH +POETRY_VIRTUALENVS_CREATE +POETRY_VIRTUALENVS_IN_PROJECT +POETRY_VIRTUALENVS_PATH +PYTHONPATH +VIRTUAL_ENV +name ~PATH ~XDG_CONFIG_DIRS ~XDG_DATA_DIRS
+direnv: export +AR +AS +CC +CONFIG_SHELL +CXX +DEVENV_DOTFILE +DEVENV_PROFILE +DEVENV_ROOT +DEVENV_STATE +IN_NIX_SHELL +LD +LD_DYLD_PATH +MACOSX_DEPLOYMENT_TARGET +NIX_BINTOOLS +NIX_BINTOOLS_WRAPPER_TARGET_HOST_aarch64_apple_darwin +NIX_CC +NIX_CC_WRAPPER_TARGET_HOST_aarch64_apple_darwin +NIX_CFLAGS_COMPILE +NIX_COREFOUNDATION_RPATH +NIX_DONT_SET_RPATH +NIX_DONT_SET_RPATH_FOR_BUILD +NIX_ENFORCE_NO_NATIVE +NIX_HARDENING_ENABLE +NIX_IGNORE_LD_THROUGH_GCC +NIX_INDENT_MAKE +NIX_LDFLAGS +NIX_NO_SELF_RPATH +NIX_PKG_CONFIG_WRAPPER_TARGET_HOST_aarch64_apple_darwin +NIX_STORE +NM +PATH_LOCALE +PKG_CONFIG +PKG_CONFIG_PATH +POETRY_VIRTUALENVS_CREATE +POETRY_VIRTUALENVS_IN_PROJECT +POETRY_VIRTUALENVS_PATH +PYTHONPATH +RANLIB +SIZE +SOURCE_DATE_EPOCH +STRINGS +STRIP +VIRTUAL_ENV +__darwinAllowLocalNetworking +__impureHostDeps +__propagatedImpureHostDeps +__propagatedSandboxProfile +__sandboxProfile +cmakeFlags +configureFlags +dontAddDisableDepTrack +mesonFlags +name +system ~PATH ~XDG_DATA_DIRS
 #+end_example
 
 * Python
